@@ -1,0 +1,187 @@
+body{
+    background-color: white;
+}
+.container{
+    display: flex;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    background: hsl(36, 100%, 99%);
+  
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    margin: 15px 5%;
+    color: rgb(218, 203, 203);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li{
+    padding: 15px;
+    font-weight: bold;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.nav ul li:hover{
+    color:hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    justify-content:space-between;
+    height: 80vh;
+    margin: 5px 5%;
+    align-items: center;
+}
+h1{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.cardleft img{
+    width: 98%;
+}
+ .main .cardleft{
+    margin: 0 10px;
+
+}
+ .main .future{
+    display: flex;
+    
+}
+.future .BrightFuture{
+    color: hsl(240, 100%, 5%);
+    flex: 100%;
+    margin: 15px 0;
+    font-weight: bolder;
+    justify-content: center;
+    align-self: end;
+
+}
+.main .weDive{
+    color: hsl(233, 8%, 79%);
+    margin: 15px 0;
+    line-height: 25px;
+}
+.main .weDive button{
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 30px 0;
+    text-transform: uppercase;
+    width: 40%;
+}
+.future .weDive button a{
+    color: hsl(36, 100%, 99%);
+    text-decoration: none;
+    font-weight: 800;
+}
+ .main .new{
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    padding: 0px 30px;
+}
+ .main .new p{
+    color: hsl(233, 8%, 79%);
+    font-size: 15px;
+}
+.lowerCard{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 4%;
+    align-items: center;
+}
+.lowerCard .card .card1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 15px;  
+}
+.lowerCard .card .card1 p{
+    color: hsl(233, 8%, 79%);
+    font-size: 15px;
+}
+.lowerCard .card .card1 h1{
+    color: hsl(233, 8%, 79%);
+}
+
+
+
+@media (max-width: 375px) {
+    .nav {
+       display: none;
+        position: absolute;
+        left: 0;
+        padding: 10px 0;
+    }
+   
+    .nav ul {
+        display: block;
+        flex-direction: column;
+    }
+    .nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }    
+    .main {
+        flex-direction: column;
+            gap: 0;
+    }
+    .main .cardleft img {
+        flex-direction: column;
+        width: 90%;
+        position: absolute;
+        }    
+    
+    .new .cardleft {
+        display: flex;
+        flex-direction: column;
+    } 
+    .future  {
+        flex-direction: column;
+    }
+    .lowerCard{
+        padding: 10px 0;
+        flex-direction: column;
+        margin-top: 300px;
+        margin-left: 25px;
+                }   
+    .lowerCard .card .card1 img {
+        width: 120px;
+        height: 150px;
+    }
+    .lowerCard .card .card h1{
+        font-size: 20px;                    
+    }
+    .lowerCard .card .card1 h3 {
+        font-size: 15px;
+    }
+    .lowerCard .card .card1 p {
+        font-size: 12px;
+    }
+    .lowerCard .card{
+        flex-direction: column;
+    }
+    .future .weDive button {
+        background-color: hsl(5, 85%, 63%);
+        color: white;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        width: 60%;
+    }
+
+}
